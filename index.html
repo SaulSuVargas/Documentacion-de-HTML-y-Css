@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wiki-Program</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Documentacion de HTML y CSS</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduccion">Introduccion</a></li>
+            <li><a class="nav-link" href="#¿Que_es_HTML?">¿Que es HTML?</a></li>
+            <li><a class="nav-link" href="#Marcador_HTML">Marcador HTML</a></li>
+            <li><a class="nav-link" href="#Elementos">Elementos</a></li>
+            <li><a class="nav-link" href="#Atributos">Atributos</a></li>
+            <li><a class="nav-link" href="#Etiquetas_basicas">Etiquetas basicas</a></li>
+            <li><a class="nav-link" href="#Hola_Mundo">Hola Mundo</a></li>
+            <li><a class="nav-link" href="#Editores_de_texto">Editores de texto</a></li>
+            <li><a class="nav-link" href="#¿Que_es_CSS?">¿Que es CSS?</a></li>
+            <li><a class="nav-link" href="#Sintaxis">Sintaxis</a></li>
+            <li><a class="nav-link" href="#Selectores">Selectores</a></li>
+            <li><a class="nav-link" href="#Bloques_de_declaracion">Bloques de declaracion</a></li>
+            <li><a class="nav-link" href="#Uso">Uso</a></li>
+            <li><a class="nav-link" href="#Referencia">Referencia</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduccion">
+            <header>Introduccion</header>
+            <article>
+                <p>
+                    En esta documentacion aprenderemos la definicion de HTML y CSS, 
+                    elementos escenciales para la creacion de paginas web. 
+                    Ademas conoceremos su entorno estructural, como vendrian hacer 
+                    sus bloques de declaracion, elementos, atributos, Sintaxis, 
+                    selecciones, selectores, etc. Con el fin de que cada usuario 
+                    se interesa mas en la interfaz, programacion y diseño web.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="¿Que_es_HTML?">
+            <header>¿Que es HTML?</header>
+            <article>
+                <p>
+                    HTML es el lenguaje con el que se define el contenido de las páginas web.
+                    Básicamente se trata de un conjunto de etiquetas que sirven para definir el 
+                    texto y otros elementos que compondrán una página web, como imágenes, listas,
+                    vídeos, etc.
+                </p>
+                <p>
+                    El HTML es un lenguaje de marcación de elementos para la creación de documentos
+                    hipertexto, muy fácil de aprender, lo que permite que cualquier persona, 
+                    aunque no haya programado en la vida, pueda enfrentarse a la tarea de crear una web.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Marcador_HTML">
+            <header>Marcador HTML</header>
+            <article>
+                <p>
+                    El HTML se escribe en forma de «etiquetas», rodeadas por corchetes angulares (<,>,/). 
+                    El HTML también puede describir, hasta un cierto punto, la apariencia de un documento,
+                    y puede incluir o hacer referencia a un tipo de programa llamado script, el cual puede
+                    afectar el comportamiento de navegadores web y otros procesadores de HTML
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Elementos">
+            <header>Elementos</header>
+            <article>    
+                <p>
+                    Los elementos son la estructura básica de HTML. Los elementos tienen dos propiedades
+                    básicas: atributos y contenido. Cada atributo y contenido tiene ciertas restricciones 
+                    para que se considere válido al documento HTML.
+                </p>
+                <p>
+                    Los elementos están agrupados por funciones para ayudarte a encontrar lo que tienes en mente con 
+                    facilidad. Aunque esta guía está escrita para aquellos que son nuevos escribiendo 
+                    código, se pretende que sea una referencia útil para cualquiera.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Atributos">
+            <header>Atributos</header>
+            <article>
+                <p>
+                    En su mayoría los atributos de un elemento son pares nombre-valor, separados 
+                    por un signo de igual «=» y escritos en la etiqueta de comienzo de un elemento, 
+                    después del nombre del elemento. 
+                </p>
+                <p>
+                    El valor puede estar rodeado por comillas dobles o simples, aunque ciertos 
+                    tipos de valores pueden estar sin comillas en HTML (pero no en XHTML).
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Etiquetas_basicas">
+            <header>Etiquetas basicas</header>
+            <article>
+                Son fragmentos de texto que se usan para dar propiedades específicas al texto cuando escribimos en código html, y estas son las principales:
+                    <code>&lt;html&gt;:Se define como el inicio del documento HTML.</code>
+                    <code>&lt;script&gt;:Incrusta un script en una web, o llama a uno mediante //src="url del script"//</code>
+                    <code>&lt;head&gt;:Define la cabecera del documento HTML; esta cabecera suele contener información sobre el documento que no se muestra directamente al usuario.</code>
+                    <code>&lt;title&gt;:Define el título de la página. Por lo general, el título aparece en la barra de título encima de la ventana.</code>
+                    <code>&lt;main&gt;:división estructural de la página que engloba el contenido principal de la misma.</code>
+                    <code>&lt;link&gt;:Nos sirve para vincular el sitio a hojas de estilo o iconos. Por ejemplo:&lt;link rel="stylesheet" href="/style.css" type="text/css"&gt;</code>.
+                    <code>&lt;style&gt;:Nos sirve para colocar el estilo interno de la página; ya sea usando CSS u otros lenguajes similares.</code>
+                    <code>&lt;meta&gt;:Se usa para metadatos como la autoría o la licencia, inclUso para indicar parámetros http mediante http-equiv="" cuando no se pueden modificar por no estar disponible la configuración o por dificultades con server-side scripting.</code>
+                    <code>&lt;h1&gt;:Son encabezados o títulos del documento con diferente relevancia.</code>
+                    <code>&lt;div&gt;:Es la división de la página. Se recomienda, junto con css, en vez de &lt;table&gt; cuando se desea alinear contenido.</code>
+                    <code>&lt;footer&gt;:Representa el pie de un documento o sección.</code>
+                En conclusion el texto en una página web está «marcado» con estos códigos para dar instrucciones al navegador web sobre cómo mostrar el texto.
+            </article>
+        </section>
+        <section class="main-section" id="Hola_Mundo">
+            <header>Hola Mundo</header>
+            <article>
+                <p>
+                    Para comenzar a escribir en HTML, abra su editor de texto y escriba su primer codigo "Hola mundo":
+                </p>
+                <code>&lt;html&gt;<br>---&lt;header&gt;<br>---&lt;/header&gt;<br>---&lt;body&gt;<br>------&lt;h1&gt;¡Hola mundo!&lt;/h1&gt;<br>---&lt;/body&gt;<br>&lt;/html&gt;</code>
+                <p>
+                    Seleccione el código en el pad y presione Ctrl+s para guardar cambios, y luego ver el codigo desplegarse en su ¡navegador! 
+                </p>  
+            </article>
+        </section>
+        <section class="main-section" id="Editores_de_texto">
+            <header>Editores de texto</header>
+            <article>
+                <p>
+                    El lenguaje HTML puede ser creado y editado con cualquier editor de textos básico, como puede ser Gedit en GNU/Linux, 
+                    el Bloc de notas de Windows, o cualquier otro editor que admita texto sin formato como GNU Emacs, Microsoft Wordpad, 
+                    TextPad, Vim, Notepad++, entre otros. 
+                </p>
+                <p>
+                    Existen, además, otros editores para la realización de sitios web con características WYSIWYG (What You See Is What 
+                    You Get, o en español: «lo que ves es lo que obtienes»). Estos editores permiten ver el resultado de lo que se está 
+                    editando en tiempo real, a medida que se va desarrollando el documento.
+                </p>
+                <p>
+                    Existe otro tipo de editores HTML llamados WYSIWYM que dan más importancia al contenido y al significado que a la 
+                    apariencia visual. Entre los objetivos que tienen estos editores es la separación del contenido y la presentación, 
+                    fundamental en el diseño web.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="¿Que_es_CSS?"> 
+            <header>¿Que es CSS?</header>
+            <article>
+                <p>
+                    CSS son las siglas de “Cascading Style Sheets” (hojas de estilo en cascada). CSS es un lenguaje para la composición 
+                    y estructuración de páginas web (HTML o XML). Este lenguaje contiene elementos de codificación y se compone de estas 
+                    “Cascading Style Sheets” que también se llaman archivos CSS (. css).
+                </p>
+                <p>
+                    Se utilizan para ordenar las instrucciones referentes a la apariencia de un sitio y presentar los contenidos de una 
+                    página de forma atractiva. De este modo, HTML se emplea para estructurar el contenido de un sitio, mientras que CSS 
+                    se usa para estructurar su presentación.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Sintaxis">
+            <header>Sintaxis</header>
+            <article>
+                <p>
+                    La meta básica del lenguaje Cascading Stylesheet (CSS) es permitir al motor del navegador pintar elementos de la 
+                    página con características específicas, como colores, posición o decoración. La Sintaxis CSS refleja estas metas 
+                    y estos son los bloques básicos de construcción.
+                </p>
+                <p>
+                    La Sintaxis de definición describe qué valores están permitidos y las interacciones entre ellos. Un componente 
+                    puede ser una palabra clave, algunos caracteres literales, ó un valor de tipo de dato de CSS o propiedad CSS.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Selectores">
+            <header>Selectores</header>
+            <article>
+                <p>
+                    Los selectores declaran qué etiquetas se le aplican a los estilos que coincidan con la etiqueta o atributo 
+                    señalados en la regla, los selectores pueden aplicarse a: 
+                </p>
+                <ul>
+                    <li>Todos los elementos de un tipo, como los párrafos &lt;p&gt;.</li>
+                    <li>Elementos seguidos de un atributo, en particular: </li>
+                    <li>&lt;id:&gt;Identificador, un identificador único para la etiqueta.</li>
+                    <li>&lt;clase&gt;, un identificador para anotar múltiples elementos</li>
+                </ul>
+                <p>
+                    Las clases y los identificadores son sensibles a las mayúsculas, comienzan con letras, y pueden incluir 
+                    caracteres alfanuméricos y guiones bajos. Una clase se aplica a cualquier número de elementos. Un identificador 
+                    se aplica a un solo elemento. 
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Bloques_de_declaracion">
+            <header>Bloques de declaracion</header>
+            <article>
+                <p>
+                    Un bloque de declaraciones consiste en una lista de declaraciones unidas. Cada declaración consiste en una propiedad, 
+                    dos puntos (:), y un valor. Si hay muchas declaraciones en un bloque, un punto y coma (;) 
+                    es insertado para separar cada declaración. 
+                </p>
+                <p>
+                    Las propiedades son insertadas en el estándar CSS. Cada propiedad tiene un conjunto de posibles valores. Algunas 
+                    propiedades afectan a cualquier elemento, otras solo a un grupo particular de elementos. Los valores pueden ser palabras 
+                    clave, como "center" o "inherit", o valores numéricos, como 200px (200 píxeles) o 80% (80 por ciento del ancho de la ventana).
+                    Los valores de colores son especificados por medio de una palabra clave (ej. "red"), de valores hexadecimales (ej. #FF0000, pudiéndose abreviar como #F00).
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Uso">
+            <header>Uso</header>    
+            <article>
+                <p>
+                    Antes del desarrollo de CSS, toda la información presentacional de los documentos HTML era incluida en el código HTML.
+                    Los colores de las fuentes, los estilos de fondo, la alineación de los elementos, los bordes y tamaños eran descritos 
+                    explícitamente, a veces de manera redundante, dentro del HTML. CSS permite a los diseñadores mover toda la información 
+                    presentacional a otro archivo, la hoja de estilos, resultando en un código HTML notablemente más simple. 
+                </p>
+                <p>
+                    CSS permite la separación entre la presentación y la estructura. CSS puede definir el color, fuente, alineación del 
+                    texto, tamaño, bordes, espaciado, capas y muchas otras características tipográficas, y pueden aplicarse distintos estilos 
+                    de impresión y de pantalla. CSS también define estilos no visuales, como la velocidad de lectura y énfasis en los lectores 
+                    de textos aurales. El W3C ha declarado obsoleto el Uso de las etiquetas presentacionales HTML. 
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Referencia">
+            <header>Referencia</header>
+            <article>
+                <ul>
+                    <li>Toda documentacion de esta pagina esta tomada de <a href="https://es.wikipedia.org" target="_blank">Wikipedia</a></li> 
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
